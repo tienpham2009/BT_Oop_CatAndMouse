@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="myjs/Cat.js"></script>
+<script src="myjs/Mouse.js"></script>
+<script>
+    let cat = new Cat('Tom',10,10,true);
+    let mouse = new Mouse('Jerry',5,5,true);
+    cat.catchMouse(mouse);
+    console.log(cat.eatMouse(mouse));
+    mouse.setSpeed(15)
+    cat.catchMouse(mouse);
+    mouse.setStatus(false);
+    console.log(cat.eatMouse(mouse));
+</script>
+</body>
+</html>
